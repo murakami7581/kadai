@@ -1,0 +1,14 @@
+.p-footer__container{
+    height: 10rem;
+    background-color: #9D8670;
+    text-align: center;
+    color: #FFFFFF;
+    
+&__text{
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+}
+&__subtext{
+    padding: 2rem;
+}
+}

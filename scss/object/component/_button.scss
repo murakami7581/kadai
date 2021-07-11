@@ -1,0 +1,39 @@
+#c-form{
+    position:relative;
+    display: flex;
+    
+&__search{
+    border-radius: 0.5rem;
+    background:#FFFFFF;
+    width: 35rem;
+    border: solid 0.1rem #707070;/*線*/
+}
+&__search__text{	
+    outline:0;	
+    height:3rem;
+    padding:0 10px;  
+    left:0;
+    top:0; 
+    }
+&__search__button{
+    float: left;
+    padding: 0.5rem;
+    
+}
+&__submit{
+    margin-left: 0.5rem;
+    width:8rem;
+    height:3.5rem;
+    left:15rem; 
+    top:0;
+    border-radius: 0.5rem;
+    background:#F2EDE9;
+    color:#fff;
+    font-weight:bold;
+    font-size:1rem;
+    border:none;
+    color: #707070;
+    text-align: center;
+    border: solid 0.1rem #707070;/*線*/
+    }
+    }
