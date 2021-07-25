@@ -1,126 +1,49 @@
-.c-section{
+.c-main__container{
     
 &__top{
     position: relative;
     display: flex;
     align-items: center;
-    
 }
 &__img{
     width: 100%;
+    height: 20rem;
+    background-color: #000000;
     
 }
-&__img__text{
+&__img1{
+    width: 100%;
+    height: 50rem;
+    @include sp{
+        height: 20rem;
+    }
+}
+&__text{
     position: absolute;
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: bold;
     color: white;
     margin-left: 4rem;
-}
 
-&__left{
-    position: relative;
-    display: flex;
-    float: left;
-    width: 40%;
-    margin: 10rem 1rem 10rem 8rem;
-    padding: 0;
 }
-&__left__img{
-    width: 100%;
-}
-&__left__text{
+&__subtext{
     position: absolute;
-    color: white;
-    font-size: 4rem;
-    padding: 2rem 0 0 1rem;
-    font-weight: bold;
+    color: #FFFFFF;
+    margin-left: 17rem;
+    margin-top: 0.5rem;
+    @include sp {
+        margin:  12rem 4rem 6rem 4rem;
+    }
 }
-&__left__subtext{
+&__subtext2{
     position: absolute;
-    top: 60%;
-}
-&__right{
-    position: relative;
-    display: flex;
-    float: right;
-    width: 40%;
-    margin: 10rem 8rem 8rem 1rem;
-    padding: 0;
-}
-&__right__img{
-    width: 100%;
-}
-&__right__text{
-    position: absolute;
-    color: white;
-    font-size: 4rem;
-    padding: 2rem 0 0 1rem;
-    font-weight: bold;
-}
-&__right__subtext{
-    position: absolute;
-    top: 60%;
-}
-&__text1{
-    position: absolute;
-    top:68%;
-    width: 44rem;
-    height: 13rem;
-    background-color: #FFFFFF;
-    padding: 1.5rem;
-    margin-left: 1rem;
-    opacity: 0.8;
-}
-&__text2{ 
-    position: absolute;
-    width: 44rem;
-    height: 13rem;
-    top:84%;
-    background-color: #FFFFFF;
-    padding: 1.5rem;
-    margin-left: 1rem;
-    opacity: 0.8;
-}
-h4{
-    font-size: 1.5rem;
-    font-weight: bold; 
-}
-&__text__sub{
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
-    color:#3C2A10;
-}
+    color: #FFFFFF;
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+    @include sp {
+        margin:  12rem 4rem 6rem 4rem;
+    }
 
-
-&__map {
-    clear: both;
-    position: relative;
-}
-&__map__img {
-    width: 100%;
-    display: flex;
-    background-color: #707070;
-}
-&__map2{
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    width: 90vh;
-    top: 0;
-    padding: 6rem;
-    color: white;
-    height: 100%;
-}
-&__map2__text {
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    top: 0;
-}
-&__map2__subtext{
-    line-height: 2;
-    font-size: 1.2rem;
 }
 }
-
-
 
