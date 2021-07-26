@@ -30,7 +30,16 @@
     font-size: 4rem;
     padding: 2rem 0 0 1rem;
     font-weight: bold;
-
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        margin: 3rem 0 0 2.5rem; /* 位置調整 */
+        transform: translate(-50%); /* 位置調整 */
+        width: 5rem; /* 下線の幅 */
+        height: 2px; /* 下線の太さ */
+        background-color: #FFFFFF; /* 下線の色 */
+    }
 }
 &__left__subtext{
     position: absolute;
@@ -46,12 +55,13 @@
     float: right;
     width: 50%;
     padding: 0;
+
     @include sp{
         width: 100%;
     
     }
-
 }
+
 &__right__img{
     width: 100%;
     
@@ -62,6 +72,16 @@
     font-size: 4rem;
     padding: 2rem 0 0 1rem;
     font-weight: bold;
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        margin: 3rem 0 0 2.5rem; /* 位置調整 */
+        transform: translate(-50%); /* 位置調整 */
+        width: 5rem; /* 下線の幅 */
+        height: 2px; /* 下線の太さ */
+        background-color: #FFFFFF; /* 下線の色 */
+    }
     
 }
 &__right__subtext{
@@ -71,6 +91,7 @@
 }
 &__text1{
     position: absolute;
+    justify-content: center;
     top:68%;
     width: 92%;
     height: 15%;
@@ -150,23 +171,33 @@ iframe{
     width: 60%;
     position: absolute;
     top: 0;
-    padding: 6rem 8rem 0 8rem;
+    padding: 5rem 6rem 0 6rem;
     color: white;
     height: 100%;
     @include tab{
         width: 100%;
         padding: 1.5rem;
-        padding-top: 1rem;
-        font-size: 1rem;
+
     }
     @include sp{
         height: 25rem;
     }
 }
 &__map2__text {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     font-size: 3rem;
     top: 0;
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        margin: 3rem 0 0 4rem; /* 位置調整 */
+        transform: translate(-50%); /* 位置調整 */
+        width: 8rem; /* 下線の幅 */
+        height: 2px; /* 下線の太さ */
+        background-color: #FFFFFF; /* 下線の色 */
+
+}
     @include tab{
         padding-top: 2rem;
         margin-bottom: 1rem;
@@ -175,16 +206,16 @@ iframe{
     }
     
 }
+
 &__map2__subtext{
     line-height: 2;
-    font-size: 1.2rem;
+    margin-top: 6rem;
+    
     @include tab{
         line-height: 2;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
-    @include sp{
-        font-size: 1.2rem;
-    }
+
 }
 }
 
