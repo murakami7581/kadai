@@ -35,6 +35,7 @@
     }
 }
 
+
 #c-form{
     position:relative;
     display: flex;
@@ -88,12 +89,11 @@
         line-height: 1;
         width: 4rem;
         height: 0.5rem;
-        background-color: #707070;
+        background: currentColor;
         border-radius: 0.1rem;
         position: relative;
         transform: rotate(45deg);
-        margin-bottom: 12rem;
-        margin-top: 1.5rem;
+        margin: 2rem 0 9rem 15rem;
         &::before{
             content: '';
             position: absolute;
@@ -104,16 +104,10 @@
             background: inherit;
             border-radius: inherit;
             transform: rotate(90deg);
-            
         }
         @include tab{
             display: inline-block;
-            left: 80%;
         }
-        @include sp{
-            left: 85%;
-        }
-
     }
 
 

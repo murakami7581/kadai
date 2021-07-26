@@ -3,22 +3,16 @@
     min-height: 100vh;
     background-color: #F2EDE9;
     position: relative;
-    
+    z-index: 50;
     @include tab{
         width: 30%;
-        transform: translateX(100vw);
-        position: fixed;
-        top: 0;
-        right: 0;
-        background: #F2EDE9;
+        display: none;
         
     }
     @include sp{
-        width: 90%;
+        width: 100%;
     }
     }
-      /* アニメーション後のメニューの状態 */
-    .l-contents__sidebar.is-active{
-        transform: translateX(0);
-    }
+
+
 
