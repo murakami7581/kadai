@@ -1,3 +1,11 @@
+$pc-tab: px;
+@mixin pc-tab {
+    @media (max-width: ($pc-tab)) {
+        @content;
+    }
+}
+
+
 $tab: 834px;
 @mixin tab {
     @media (max-width: ($tab)) {

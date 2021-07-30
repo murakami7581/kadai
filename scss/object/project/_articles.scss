@@ -92,73 +92,67 @@
 &__text1{
     position: absolute;
     justify-content: center;
-    top:68%;
-    width: 92%;
+    top:66%;
+    max-width: 90%;
     height: 15%;
     background-color: #FFFFFF;
     padding: 1.5rem;
-    left: 1.7rem;
     opacity: 0.8;
+    left: 1.5rem;
+    right: 1.5rem;
+    margin: 0 auto;
+    overflow: hidden;
     @include tab{
         top:45%;
-        width: 92%;
         height: 25%;
         padding: 2rem 1rem 1rem 1rem;
-        left: 1.3rem;
     }
 }
 &__text2{ 
     position: absolute;
-    width: 92%;
+    max-width: 90%;
     height: 15%;
-    top:84%;
+    top:83%;
     background-color: #FFFFFF;
     padding: 1.5rem;
-    left: 1.7rem;
+    left: 1.5rem;
+    right: 1.5rem;
     opacity: 0.8;
+    margin: 0 auto;
+    overflow: hidden;
     @include tab{
-        width: 92%;
         height: 25%;
-        top:73%;
+        top:72.5%;
         padding: 2rem 1rem 1rem 1rem;
-        left: 1.3rem;
     }
 }
 &__text1-1{
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: bold; 
-    @include tab{
-        font-size: 1.5rem;
-    }
+    margin-right: 4rem;
+    
     @include sp{
         font-size: 2.3rem;
     }
 }
 &__text2-1{
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: bold; 
-    @include tab{
-        font-size: 1.5rem;
-    }
+
     @include sp{
         font-size: 2.3rem;
     }
 }
 &__text__sub{
-    font-size: 1.2rem;
-    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
     color:#3C2A10;
-    @include tab{
-        font-size: 1.2rem;
-    }
-    @include sp{
-        font-size: 1.6rem;
-    }
 }
 &__map {
     clear: both;
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 iframe{
     width: 100%;
     display: flex;
@@ -174,13 +168,14 @@ iframe{
     padding: 5rem 6rem 0 6rem;
     color: white;
     height: 100%;
+    
     @include tab{
         width: 100%;
         padding: 1.5rem;
-
     }
     @include sp{
         height: 25rem;
+        overflow: visible;
     }
 }
 &__map2__text {
@@ -210,12 +205,31 @@ iframe{
 &__map2__subtext{
     line-height: 2;
     margin-top: 6rem;
-    
+    box-sizing:border-box;border:none;
+    font-size: 1.3rem;
     @include tab{
+        line-height: 2.5;
+        font-size: 1.5rem;
+    }
+    @include sp{
         line-height: 2;
         font-size: 1.1rem;
     }
 
+}
+}
+.p-footer__container{
+    height: 15rem;
+    background-color: #9D8670;
+    text-align: center;
+    color: #FFFFFF;
+    
+&__text{
+    font-size: 1.5rem;
+    padding-top: 5rem;
+}
+&__subtext{
+    padding: 2rem;
 }
 }
 
@@ -246,6 +260,7 @@ iframe{
         }
     &__img {
         width: 50%;
+        object-fit: cover;
         @include sp{
             width: 100%;
         }
@@ -307,6 +322,7 @@ iframe{
         }
     &__img {
         width: 50%;
+        object-fit: cover;
         @include sp{
             width: 100%;
         }
@@ -339,6 +355,7 @@ iframe{
         }
     &__img {
         width: 50%;
+        object-fit: cover;
         @include sp{
             width: 100%;
         }
@@ -371,16 +388,19 @@ iframe{
     &__search__text{
         background-color: #FFFFFF;
         color: #707070;
-        padding: 2rem 4rem 2rem 4rem;
-        margin: 0 15rem 0 15rem;
+        padding: 2rem 2.5rem;
+        width: 25rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
         border-radius: 50px;
         font-size: 1.2rem;
         @include tab {
-            padding: 1.5rem 3rem 1.5rem 3rem;
-            margin:0 12rem 3rem 12rem;
+            padding: 1.5rem 1.5rem;
+            width: 15rem;
+            font-size: 1.6rem;
         }
         @include sp{
-            margin: 0 8rem 3rem 8rem;
+            
         }
     }
 }
@@ -605,8 +625,13 @@ ul{
 }
 &__2__img{
     width: 42.5%;
+    height: 25rem;
+    object-fit: cover;
     @include tab{
         margin-bottom: 20rem;
+    }
+    @include sp{
+        height: auto;
     }
 }
 &__2__text{
@@ -618,7 +643,6 @@ ul{
 }
 &__2__sptext{
     display: none;
-
     @include sp{
         display: block;
         margin-left: 1rem;
@@ -629,6 +653,7 @@ ul{
 &__3{
     margin-bottom: 4rem;
     display: flex;
+
     @include sp{
         margin-bottom: -7rem;
     }
@@ -636,14 +661,20 @@ ul{
 }
 &__3__img{
     width: 42.5%;
+    height: 25rem;
+    object-fit: cover;
     @include tab{
         margin-bottom: 20rem;
+    }
+    @include sp{
+        height: auto;
     }
 
 }
 &__3__text{
     margin-right: 3.5rem;
     font-size: 1.6rem;
+    overflow: hidden;
     @include sp{
         display: none;
     }
