@@ -1041,20 +1041,25 @@ body {
 
 .p-section__map {
   clear: both;
-  position: relative;
   background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../image/map.png);
+  height: 100%;
+  width: auto;
+  background-size: cover;
+  background-position: 50% 10%;
+  position: relative;
 }
 
-.p-section__map iframe {
-  width: auto;
-  height: 45rem;
+@media (max-width: 375px) {
+  .p-section__map {
+    height: 90rem;
+    background-position: 20%;
+  }
 }
 
 .p-section__map2 {
   background-color: rgba(0, 0, 0, 0.4);
   width: 60%;
-  position: absolute;
-  top: 0;
   padding: 6rem;
   color: white;
   height: 100%;
@@ -1069,22 +1074,21 @@ body {
 
 @media (max-width: 375px) {
   .p-section__map2 {
-    height: 25rem;
-    overflow: visible;
+    height: 60rem;
+    position: absolute;
+    padding: 2rem;
   }
 }
 
 .p-section__map2__text {
-  margin-bottom: 1.5rem;
   font-size: 3rem;
-  top: 0;
 }
 
 .p-section__map2__text::after {
   content: '';
   display: block;
   position: absolute;
-  margin: 3rem 0 0 4rem;
+  margin: 6rem 0 0 4rem;
   /* 位置調整 */
   transform: translate(-50%);
   /* 位置調整 */
@@ -1094,6 +1098,13 @@ body {
   /* 下線の太さ */
   background-color: #FFFFFF;
   /* 下線の色 */
+}
+
+@media (max-width: 375px) {
+  .p-section__map2__text::after {
+    margin: 2rem 0 0 4rem;
+    /* 位置調整 */
+  }
 }
 
 @media (max-width: 834px) {
@@ -1107,24 +1118,24 @@ body {
 
 .p-section__map2__subtext {
   line-height: 2;
-  margin-top: 6rem;
+  margin-top: 10rem;
   box-sizing: border-box;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   box-sizing: border-box;
 }
 
 @media (max-width: 834px) {
   .p-section__map2__subtext {
     line-height: 2.5;
-    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 375px) {
   .p-section__map2__subtext {
     line-height: 2;
-    font-size: 1.1rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
   }
 }
 
