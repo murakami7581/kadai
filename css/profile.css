@@ -1041,7 +1041,7 @@ body {
 
 .p-section__map {
   clear: both;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../image/map.png);
   height: 100%;
   width: auto;
@@ -1058,7 +1058,18 @@ body {
   }
 }
 
-.p-section__map2 {
+@media (max-width: 375px) {
+  .p-section__map2 {
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+  }
+}
+
+.p-section__map3 {
   background-color: rgba(0, 0, 0, 0.4);
   width: 60%;
   padding: 6rem;
@@ -1067,24 +1078,24 @@ body {
 }
 
 @media (max-width: 834px) {
-  .p-section__map2 {
+  .p-section__map3 {
     width: 100%;
     padding: 1.5rem;
   }
 }
 
 @media (max-width: 375px) {
-  .p-section__map2 {
+  .p-section__map3 {
     position: relative;
     background-color: transparent;
   }
 }
 
-.p-section__map2__text {
+.p-section__map3__text {
   font-size: 3rem;
 }
 
-.p-section__map2__text::after {
+.p-section__map3__text::after {
   content: '';
   display: block;
   position: absolute;
@@ -1101,14 +1112,14 @@ body {
 }
 
 @media (max-width: 375px) {
-  .p-section__map2__text::after {
+  .p-section__map3__text::after {
     margin: 2rem 0 0 4rem;
     /* 位置調整 */
   }
 }
 
 @media (max-width: 834px) {
-  .p-section__map2__text {
+  .p-section__map3__text {
     padding-top: 2rem;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -1116,37 +1127,27 @@ body {
   }
 }
 
-.p-section__map2__subtext {
+.p-section__map3__subtext {
   line-height: 2;
   margin-top: 10rem;
   box-sizing: border-box;
   border: none;
   font-size: 1.8rem;
   box-sizing: border-box;
+  color: #FFFFFF;
 }
 
 @media (max-width: 834px) {
-  .p-section__map2__subtext {
+  .p-section__map3__subtext {
     line-height: 2.5;
   }
 }
 
 @media (max-width: 375px) {
-  .p-section__map2__subtext {
+  .p-section__map3__subtext {
     line-height: 2;
     margin-top: 3rem;
     font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .p-section__map3 {
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    position: absolute;
   }
 }
 

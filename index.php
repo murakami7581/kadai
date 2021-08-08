@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="format-detection" content="telephone=no">
-		<title>front-page</title>
-		<meta name="description" content="WordPress theme development static data for beginners">
-		<link rel="stylesheet" href="css/profile.css">
-	</head>
-		<body>
-			<!----- ヘッダー ----->
-			<div class="l-contents">
-				
-			<article class="l-contents__header">
-				<div class="c-bar">
-					<button class="c-bar__button">Menu</button>
-				</div>
-
-
-				<header class="l-header__container">
-					
-					<p class="l-header__title">Hamburger</p>
-						<form id="c-form" action="自分のサイトのURL">
-							<div id="c-form__search">
-								<input id="c-form__search__text" type="text">
-								<button id="c-form__search__button"><img src="image/form.png"></button>
-							</div>
-								<input id="c-form__submit" type="submit" value="検索" />
-						</form>
-
-
-				</header>
-				
+<!-- header読み込み -->
+<?php get_header(); ?>
 					<div class="l-main">
 						<div class="c-main__container">
 							<div class="c-main__container__top">
@@ -72,11 +40,11 @@
 							
 
 							<div class="p-section__map">
-									<div class="p-section__map2">
-										<h2 class="p-section__map2__text">見出しが入ります</h2>
-											<p class="p-section__map2__subtext">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+								<div class="p-section__map2"></div>
+									<div class="p-section__map3">
+										<h2 class="p-section__map3__text">見出しが入ります</h2>
+											<p class="p-section__map3__subtext">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
 											</p>
-										<div class="p-section__map3"></div>
 									</div>
 							</div>
 						</div>
@@ -124,16 +92,4 @@
 			</div>
 		
 			<!----- サイドバー END----->
-
-			<!----- フッター ----->
-			<footer class="l-footer">
-				<div class="p-footer__container">
-					<p class="p-footer__container__text">ショップ情報 ｜ ヒストリー</p>
-						<p class="p-footer__container__subtext">Copyright: RaiseTech</p>
-				</div>
-			</footer>
-			<!----- フッター END ----->
-			<script src="js/jquery-3.6.0.min.js"></script>
-            <script src="js/script.js"></script>
-		</body>
-</html>
+			<?php get_footer(); ?>

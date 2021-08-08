@@ -10,22 +10,23 @@
 	</head>
 		<body>
 			<!----- ヘッダー ----->
+			<!----- ヘッダー ----->
 			<div class="l-contents">
 				
-			<article class="l-contents__header">
-				<div class="c-bar">
-					<button class="c-bar__button">Menu</button>
-				</div>
-				<div class="l-header__container">
-					<p class="l-header__title">Hamburger</p>
-						<form id="c-form" action="自分のサイトのURL">
-							<div id="c-form__search">
-								<input id="c-form__search__text" type="text">
-								<button id="c-form__search__button"><img src="image/form.png"></button>
-							</div>
-								<input id="c-form__submit" type="submit" value="検索" />
-						</form>
-				</div>
+				<article class="l-contents__header">
+					<div class="c-bar">
+						<button class="c-bar__button">Menu</button>
+					</div>
+					<header class="l-header__container">
+						<p class="l-header__title">Hamburger</p>
+							<form id="c-form" action="自分のサイトのURL">
+								<div id="c-form__search">
+									<input id="c-form__search__text" type="text">
+									<button id="c-form__search__button"><img src="image/form.png"></button>
+								</div>
+									<input id="c-form__submit" type="submit" value="検索" />
+							</form>
+					</header>
 				
 					<div class="l-main">
 						<div class="c-main__section">
