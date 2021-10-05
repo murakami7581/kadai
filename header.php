@@ -19,6 +19,7 @@
 
 		 <header class="l-header__container">
 		 <p class="l-header__title"><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></p>
+		 <div id="sky" style="width:100%; height:100px; background-color:#3E83C8;"></div>
 		    <?php get_search_form();?>
 		 </header>
 
